@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/theme.js" defer></script>
+    <script src="assets/js/map.js" defer></script>
+    <title>Putnu dārzs</title>
+</head>
+
+<body>
+    <header>
+        <div class="index-top-menu-container">
+            <div class="header-flex">
+                <div class="header-logo">
+                    <a href="index.html"> <img id="mobile-version" src="assets/img/logo@2x.png" alt="putnu dārzs"></a>
+                </div>
+                <div class="menu">
+                    <div class="item"><a href="uznemsana.html">Uzņemšana</a> </div>
+                    <div class="item"><a href="aktualitates.html">Aktualitātes</a></div>
+                    <div class="item"><a href="parmums.html">Par mums</a></div>
+                    <div class="item"><a href="buj.html">BUJ</a></div>
+                    <div class="item"><a href="">Kontakti</a></div>
+                    <div class="header-icons">
+                        <div class="facebook-icon">
+                            <a href=""><img src="assets/img/Icon ionic-logo-facebook.svg" alt="facebook"></a>
+                        </div>
+                        <div class="lang-icons">
+                            <!--<a href=""><img src="assets/img/karogs lv.png" alt="LV"></a>-->
+                            <div class="chooseLang">
+                                <div>
+                                    <span id="pt-lang" class="lang pt-lang" onclick="changeLang('english', this)"></span>
+                                    <span id="en-lang" class="lang en-lang chosen" onclick="changeLang('latvian', this)"></span>
+                                    <span id="es-lang" class="lang es-lang" onclick="changeLang('espanol', this)"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="responsive-menu-icon">
+                    <button id="myBtn" onclick="openMenu()"><img id="close-version" src="assets/img/menu.png" alt="menu"></button>
+                </div>
+            </div>
+            <div class="header-paragraph">
+                <h1>Dabiska vide Jūsu bērna izaugsmei</h1>
+                <p>Pēc Reggio Emilia principiem bērniem no pusotra gada vecuma pašā pārdaugavas sirdī - Āgenskalnā</p>
+            </div>
+            <div class="uznemsana-btn">
+                <button class="red-btn">UZŅEMŠANA</button>
+            </div>
+            <div class="reggio-emilia">
+                <div class="name">
+                    <h2>Reggio Emilia</h2>
+                </div>
+                <div class="text">
+                    <p>Bērnam ir jābūt iespējai ietekmēt mācību procesu, apgūt pasauli izmantojot visus maņu orgānus, bērniem ir jābut iespējai komunicēt savā starpā un parādīt savu personību.</p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="main-container">
+        <div class="principi-container">
+            <p>Esam pirmā pirmsskola Latvijā, kas strādā pēc <span class="red">Reggio Emilia</span> principiem</p>
+            <div class="principi-flex desktop">
+                <div class="first-column">
+                    <div class="container">
+                        <div class="box-open">
+                            <div class="icon-box">
+                                <img src="assets/img/icon-1.png" alt="">
+                            </div>
+                            <div class="text-box">
+                                <h4>Individuāli veidots mācību process</h4>
+                                <p>Piepildīta ar dabīgu gaismu un kārtību, izmantojot dabīgus materiālus, vide mainās līdz ar bērna izaugsmi. Ikkatru priekšmetu vai vielu lieto, lai iedrošinātu bērnu iedziļināties un turpināt pētīt. Vides „valoda” ir rotaļas
+                                    ar skaņu, ritmiem un gaismu. Vidē ir dabīgi materiāli, instrumenti un sadzīves priekšmeti, lai bērns varētu sajust, ka viņam uzticas un uz viņu paļaujas. Vidi veido un par to rūpējas gan pieaugušie, gan bērni.</p>
+                                <button onclick="openInfo(1)"><img src="assets/img/arrow-green.png" alt=""></button>
+                            </div>
+                        </div>
+                        <div id="1" class="box">
+                            <div class="icon-box">
+                                <img src="assets/img/icon-1.png" alt="">
+                            </div>
+                            <div class="text-box">
+                                <h4>Individuāli veidots mācību process</h4>
+                                <button onclick="openInfo(1)"><img src="assets/img/arrow-green.png" alt=""></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="box-open">
+                            <div class="icon-box">
+                                <img src="assets/img/icon-2.png" alt="">
+                            </div>
+                            <div class="text-box">
+                                <h4>Iedvesmojoša vide bērna izaugsmei</h4>
+                                <p>Piepildīta ar dabīgu gaismu un kārtību, izmantojot dabīgus materiālus, vide mainās līdz ar bērna izaugsmi. Ikkatru priekšmetu vai vielu lieto, lai iedrošinātu bērnu iedziļināties un turpināt pētīt. Vides „valoda” ir rotaļas
+                                    ar skaņu, ritmiem un gaismu. Vidē ir dabīgi materiāli, instrumenti un sadzīves priekšmeti, lai bērns varētu sajust, ka viņam uzticas un uz viņu paļaujas. Vidi veido un par to rūpējas gan pieaugušie, gan bērni.</p>
+                                <button onclick="openInfo(2)"><img src="assets/img/arrow-green.png" alt=""></button>
+                            </div>
+                        </div>
+                        <div id="2" class="box">
+                            <div class="icon-box">
+                                <img src="assets/img/icon-2.png" alt="">
+                            </div>
+                            <div class="text-box">
+                                <h4>Iedvesmojoša vide bērna izaugsmei</h4>
+                                <button onclick="openInfo(2)"><img src="assets/img/arrow-green.png" alt=""></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="box-open">
+                            <div class="icon-box">
+                                <img src="assets/img/icon-3.png" alt="">
+                            </div>
+                            <div class="text-box">
+                                <h4>Atskats bērna domās, idejās un darbībās</h4>
+                                <p>Piepildīta ar dabīgu gaismu un kārtību, izmantojot dabīgus materiālus, vide mainās līdz ar bērna izaugsmi. Ikkatru priekšmetu vai vielu lieto, lai iedrošinātu bērnu iedziļināties un turpināt pētīt. Vides „valoda” ir rotaļas
+                                    ar skaņu, ritmiem un gaismu. Vidē ir dabīgi materiāli, instrumenti un sadzīves priekšmeti, lai bērns varētu sajust, ka viņam uzticas un uz viņu paļaujas. Vidi veido un par to rūpējas gan pieaugušie, gan bērni.
+                                </p>
+                                <button onclick="openInfo(3)"><img src="assets/img/arrow-green.png" alt=""></button>
+                            </div>
+                        </div>
+                        <div id="3" class="box">
+                            <div class="icon-box">
+                                <img src="assets/img/icon-3.png" alt="">
+                            </div>
+                            <div class="text-box">
+                                <h4>Atskats bērna domās, idejās un darbībās</h4>
+                                <button onclick="openInfo(3)"><img src="assets/img/arrow-green.png" alt=""></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="second-column">
+                    <div class="container">
+                        <div class="box">
+                            <div class="text-box">
+                                <h4>Skolotājs - vērīgs bērna līdzgaitnieks</h4>
+                                <button><img src="assets/img/arrow-green.png" alt=""></button>
+                            </div>
+                            <div class="icon-box">
+                                <img src="assets/img/icon-4.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="box">
+                            <div class="text-box">
+                                <h4>Aktīva vecāku līdzdalība skolas dzīvē</h4>
+                                <button><img src="assets/img/arrow-green.png" alt=""></button>
+                            </div>
+                            <div class="icon-box">
+                                <img src="assets/img/icon-5.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="box">
+                            <div class="text-box">
+                                <h4>Skolotāji, kuri vienmēr pilnveido sevi</h4>
+                                <button><img src="assets/img/arrow-green.png" alt=""></button>
+                            </div>
+                            <div class="icon-box">
+                                <img src="assets/img/icon-6.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="principi-flex tablet">
+                <div class="first-column">
+                    <div class="box-open-tablet">
+                        <div class="icon-box">
+                            <img src="assets/img/icon-1.png" alt="">
+                        </div>
+                        <div class="text-box">
+                            <h4>Individuāli veidots mācību process</h4>
+                            <p>Piepildīta ar dabīgu gaismu un kārtību, izmantojot dabīgus materiālus, vide mainās līdz ar bērna izaugsmi. Ikkatru priekšmetu vai vielu lieto, lai iedrošinātu bērnu iedziļināties un turpināt pētīt. Vides „valoda” ir rotaļas
+                                ar skaņu, ritmiem un gaismu. Vidē ir dabīgi materiāli, instrumenti un sadzīves priekšmeti, lai bērns varētu sajust, ka viņam uzticas un uz viņu paļaujas. Vidi veido un par to rūpējas gan pieaugušie, gan bērni.</p>
+                            <button onclick="openInfoTablet(1)"><img src="assets/img/arrow-green.png" alt=""></button>
+                        </div>
+                    </div>
+                    <div id="1" class="box-tablet">
+                        <div class="icon-box">
+                            <img src="assets/img/icon-1.png" alt="">
+                        </div>
+                        <div class="text-box">
+                            <h4>Individuāli veidots mācību process</h4>
+                            <button onclick="openInfoTablet(1)"><img src="assets/img/arrow-green.png" alt=""></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="second-column">
+                    <div class="box-open-tablet"></div>
+                    <div class="box-tablet">
+                        <div class="text-box">
+                            <h4>Skolotājs - vērīgs bērna līdzgaitnieks</h4>
+                            <button><img src="assets/img/arrow-green.png" alt=""></button>
+                        </div>
+                        <div class="icon-box">
+                            <img src="assets/img/icon-4.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="first-column">
+                    <div class="box-open-tablet">
+                        <div class="icon-box">
+                            <img src="assets/img/icon-2.png" alt="">
+                        </div>
+                        <div class="text-box">
+                            <h4>Iedvesmojoša vide bērna izaugsmei</h4>
+                            <p>Piepildīta ar dabīgu gaismu un kārtību, izmantojot dabīgus materiālus, vide mainās līdz ar bērna izaugsmi. Ikkatru priekšmetu vai vielu lieto, lai iedrošinātu bērnu iedziļināties un turpināt pētīt. Vides „valoda” ir rotaļas
+                                ar skaņu, ritmiem un gaismu. Vidē ir dabīgi materiāli, instrumenti un sadzīves priekšmeti, lai bērns varētu sajust, ka viņam uzticas un uz viņu paļaujas. Vidi veido un par to rūpējas gan pieaugušie, gan bērni.</p>
+                            <button onclick="openInfoTablet(2)"><img src="assets/img/arrow-green.png" alt=""></button>
+                        </div>
+                    </div>
+                    <div id="2" class="box-tablet">
+                        <div class="icon-box">
+                            <img src="assets/img/icon-2.png" alt="">
+                        </div>
+                        <div class="text-box">
+                            <h4>Iedvesmojoša vide bērna izaugsmei</h4>
+                            <button onclick="openInfoTablet(2)"><img src="assets/img/arrow-green.png" alt=""></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="second-column">
+                    <div class="box-open-tablet"></div>
+                    <div class="box-tablet mobile-four">
+                        <div class="text-box">
+                            <h4>Aktīva vecāku līdzdalība skolas dzīvē</h4>
+                            <button><img src="assets/img/arrow-green.png" alt=""></button>
+                        </div>
+                        <div class="icon-box">
+                            <img src="assets/img/icon-5.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="first-column">
+                    <div class="box-open-tablet">
+                        <div class=" icon-box ">
+                            <img src="assets/img/icon-3.png " alt=" ">
+                        </div>
+                        <div class="text-box ">
+                            <h4>Atskats bērna domās, idejās un darbībās</h4>
+                            <p>Piepildīta ar dabīgu gaismu un kārtību, izmantojot dabīgus materiālus, vide mainās līdz ar bērna izaugsmi. Ikkatru priekšmetu vai vielu lieto, lai iedrošinātu bērnu iedziļināties un turpināt pētīt. Vides „valoda” ir rotaļas
+                                ar skaņu, ritmiem un gaismu. Vidē ir dabīgi materiāli, instrumenti un sadzīves priekšmeti, lai bērns varētu sajust, ka viņam uzticas un uz viņu paļaujas. Vidi veido un par to rūpējas gan pieaugušie, gan bērni.
+                            </p>
+                            <button onclick="openInfoTablet(3) "><img src="assets/img/arrow-green.png " alt=" "></button>
+                        </div>
+                    </div>
+                    <div id="3 " class="box-tablet mobile-five">
+                        <div class="icon-box">
+                            <img src="assets/img/icon-3.png" alt="">
+                        </div>
+                        <div class="text-box">
+                            <h4>Atskats bērna domās, idejās un darbībās</h4>
+                            <button onclick="openInfoTablet(3)"><img src="assets/img/arrow-green.png" alt=""></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="second-column">
+                    <div class="box-open-tablet"></div>
+                    <div class="box-tablet mobile-six">
+                        <div class="text-box">
+                            <h4>Skolotāji, kuri vienmēr pilnveido sevi</h4>
+                            <button><img src="assets/img/arrow-green.png" alt=""></button>
+                        </div>
+                        <div class="icon-box">
+                            <img src="assets/img/icon-6.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="ieapazisti-btn">
+                <button class="red-btn">IEPAZĪSTI MŪS</button>
+            </div>
+            <div class="aktual-container">
+                <h2>Aktualitātes</h2>
+                <div class="aktual-flex">
+                    <div class="aktual-box">
+                        <div class="article-name">
+                            <p>7.jūnija Dienas Biznesā raksts par Putnu dārzu</p>
+                        </div>
+                    </div>
+                    <div class="aktual-box">
+                        <div class="article-name">
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </div>
+                    <div class="aktual-box">
+                        <div class="article-name">
+                            <p>Par Reggio Emilia publiskajā telpā</p>
+                            <div class="hover-visible">
+                                <p class="hover-text">Dažādās formās esam stāstījuši „Kas ir Reggio Emilio pieeja?„ Portālā Calis.lv informatīvā rakstā „Redžio pieejas bērnudārzs Pārdaugavā” ...</p>
+                                <a href="">Lasīt vairāk</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="aktual-box">
+                        <div class="article-name">
+                            <p>Izveidota vietne "Piedzīvojums pirmsskolā"</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bildes-container">
+                <div class="bildes-flex">
+                    <div class="big-one">
+                    </div>
+                    <div class="column-flex">
+                        <div class="column-bilde"></div>
+                        <div class="column-bilde-two"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="buj-container">
+            <div class="buj-header">
+                <h2>Biežāk uzdotie jautājumi</h2>
+            </div>
+            <div id="1" class="question-container first">
+                <h4>Lorem ipsum dolot sit amet?</h4>
+                <button onclick="openQuestion(1)"><img src="assets/img/arrow red.png" alt="arrow"></button>
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+                    no sea.</p>
+            </div>
+            <div id="2" class="question-container">
+                <h4>Lorem ipsum dolor sit amet, consetetur sadipscing elitr?</h4>
+                <button onclick="openQuestion(2)"><img src="assets/img/arrow red.png" alt="arrow"></button>
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+                    no sea.</p>
+            </div>
+            <div id="3" class="question-container">
+                <h4>Lorem ipsum dolot sit amet?</h4>
+                <button onclick="openQuestion(3)"><img src="assets/img/arrow red.png" alt="arrow"></button>
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+                    no sea.</p>
+            </div>
+        </div>
+        <div class="pieteiksanas-container">
+            <h2>Pieteikšanās</h2>
+            <p>Putnu dārzā pirmsskolā un bērnu pieskatīšanas grupā laipni gaidām dažādu tautību, valstiskās vai konfesionālās piederības audzēkņus vecumā no pusotra gada līdz pieciem gadiem.</p>
+            <img src="assets/img/bilde-pieteiksanas.png" alt="foto">
+            <img class="mobile-photo" src="assets/img/bilde-pieteiksanas-mob.png" alt="foto">
+            <div class="form-container">
+                <form action="submit">
+                    <div class="form-flex">
+                        <div class="child-container">
+                            <h4>Informācija par bērnu</h4>
+                            <div class="name"><input type="text" id="name" name="name" placeholder="Vārds"><br></div>
+                            <div class="surname"><input type="text" id="surname" name="surname" placeholder="Uzvārds"><br></div>
+                            <div class="age"><input type="text" id="age" name="age" placeholder="Vecums"><br></div>
+                            <div class="date"><input type="text" placeholder="Vēlamais sākšanas datums" onfocus="(this.type='date')" onblur="(this.type='text')" id="date" name="date"><br></div>
+                        </div>
+                        <div class="parent-container">
+                            <h4>Informācija par vecāku</h4>
+                            <div class="name-p"><input type="text" id="name" name="name" placeholder="Vārds"><br></div>
+                            <div class="surname-p"><input type="text" id="surname" name="surname" placeholder="Uzvārds"><br></div>
+                            <div class="email"><input type="text" id="email" name="email" placeholder="E-pasts"><br></div>
+                            <div class="phone"><input type="text" id="phone" name="phone" placeholder="Tālruņa numurs"><br></div>
+                        </div>
+                    </div>
+                    <div class="submit">
+                        <div class="submit-flex">
+                            <div>
+                                <h6>Pieteikties ēdināšanai</h6>
+                            </div>
+                            <div class="checkbox-box">
+                                <div class="table">
+                                    <input class="checkbox-input" type="radio" id="yes" name="choice" value="true">
+                                    <label for="yes"> Jā</label><br>
+                                </div>
+                                <div class="table second">
+                                    <input class="checkbox-input" type="radio" id="no" name="choice" value="false">
+                                    <label for="no"> Nē</label><br>
+                                </div>
+                            </div>
+                        </div>
+                        <input type="submit" value="PIETEIKTIES">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-flex">
+            <div class="rekviziti">
+                <img src="assets/img/logo-white.png" alt="logo">
+                <ul class="desktop-ul">
+                    <li>SIA Putnu dārzs</li>
+                    <li>Reģ. Nr. 40103914238</li>
+                    <li>Kr.Barona iela 10/7, Rīga, LV – 1050</li>
+                    <li>A/S Swedbank, HABA LV22,</li>
+                    <li>LV03HABA0551040160679</li>
+                </ul>
+                <ul class="tablet-ul">
+                    <li>SIA Putnu dārzs</li>
+                    <li>Reģ. Nr. 40103914238</li>
+                    <li>Kr.Barona iela 10/7,</li>
+                    <li>Rīga, LV – 1050</li>
+                    <li>A/S Swedbank, HABA LV22,</li>
+                    <li>LV03HABA0551040160679</li>
+                </ul>
+                <p class="copyright">© Putnu dārzs 2021. <br> Visas tiesības aizsargātas.</p>
+            </div>
+
+            <div class="info-box">
+                <div class="icons-flex">
+                    <div class="phone">
+                        <button></button>
+                        <p>27812827</p>
+                    </div>
+                    <div class="email">
+                        <button></button>
+                        <p>info@putnudarzs.eu</p>
+                    </div>
+                    <div class="home">
+                        <button></button>
+                        <p>Baložu iela 11, Rīga</p>
+                    </div>
+                </div>
+                <div id="map" class="map">
+
+                </div>
+                <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDCJI6zL3C-wSN6eX4xM7ZOAsTdQeIxBb0&callback=initMap&libraries=&v=weekly" defer></script>
+                <div class="socials">
+                    <button class="waze"></button>
+                    <button class="facebook"></button>
+                </div>
+            </div>
+        </div>
+        <p class="copyright-tablet">© Putnu dārzs 2021. Visas tiesības aizsargātas.</p>
+    </footer>
+</body>
+
+</html>

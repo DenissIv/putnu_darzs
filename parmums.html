@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/theme.js" defer></script>
+    <script src="assets/js/map.js" defer></script>
+    <title>Putnu dārzs</title>
+</head>
+
+<body>
+    <header>
+        <div class="top-menu-container">
+            <div class="header-flex">
+                <div class="header-logo">
+                    <a href="index.html"> <img id="mobile-version" src="assets/img/krasains.png" alt="putnu dārzs"></a>
+                </div>
+                <div class="menu">
+                    <div class="item"><a href="uznemsana.html">Uzņemšana</a> </div>
+                    <div class="item"><a href="aktualitates.html">Aktualitātes</a></div>
+                    <div class="item"><a href="parmums.html">Par mums</a></div>
+                    <div class="item"><a href="buj.html">BUJ</a></div>
+                    <div class="item"><a href="">Kontakti</a></div>
+                    <div class="header-icons">
+                        <div class="facebook-icon">
+                            <a href=""><img id="facebook-img" src="assets/img/Icon-facebook-blue.png" alt="facebook"></a>
+                        </div>
+                        <div class="lang-icons">
+                            <div class="chooseLang">
+                                <div>
+                                    <span id="pt-lang" class="lang pt-lang" onclick="changeLang('português', this)"></span>
+                                    <span id="en-lang" class="lang en-lang chosen" onclick="changeLang('english', this)"></span>
+                                    <span id="es-lang" class="lang es-lang" onclick="changeLang('espanol', this)"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="responsive-menu-icon">
+                    <button id="myBtn_" onclick="openMenu_()"><img id="close-version" src="assets/img/menu-green.png" alt="menu"></button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="parmums-container">
+        <div class="filosofija">
+            <h1>Mūsu filosofija</h1>
+            <div class="filosofija-flex">
+                <div>
+                    <img src="" alt="">
+                </div>
+                <div>
+                    <p class="first-p">Starptautiskā pirmsskola Putnu dārzs Pārdaugavā ir Reggio Emilia alternatīvās pedagoģiskās koncepcijas, kas veidojusies 20. gadsimta otrajā pusē Itālijā, bet šobrīd plaši pazīstama pasaulē bērnudārzs. Esam pārņēmuši labākās idejas
+                        no Reggio Emilia globālās pieredzes un piemērojuši Latvijas videi.</p>
+                    <p class="second-p">Putnu dārza skolotāji ir pārliecināti, ka bērnam jau no dzimšanas piemīt milzīgs potenciāls un viņš ir līdzvērtīgs kopienas biedrs. Darbinieki ikdienā ņem vērā katra bērna personību, uztveres veidu un zināšanu apguves</p>
+                </div>
+            </div>
+            <div class="pratam-flex">
+                <div class="text-box">
+                    <h2>Prātam vajag spārnus!</h2>
+                    <p>Putni jau izsenis ir brīvības simbols. Mēs vēlamies, lai arī mūsu bērni augtu kā brīvas, radošas un saprātīgas personības. Mūsu izpratnē brīvība nav visatļautība, ir skaidri jāzina noteikumi, bet tiem jābūt saprotamiem un viegli īstenojamiem,
+                        atbilstošiem mazā audzēkņa vecumposma īpatnībām. Bērnam ir nepieciešams drošs atbalsts un robežas.</p>
+                </div>
+                <div class="img-box">
+                    <img src="" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="motto">
+        <p>Mēs vēlamies saglabāt šo lidojuma sajūtu gan bērnam, gan pieaugušajam, sniedzot iespēju izpausties, “lidot”.</p>
+    </div>
+    <div class="macibu-programma">
+        <h2>Mācību programma</h2>
+        <div class="macibu-flex">
+
+            <div class="left-side">
+                <div class="leaf">
+                    <p class="padoms">Padoms un atbalsts bērnam, reizēs, kad viņš vēlas palīdzēt lielos vai mazos darbos; kopā ar vecākiem spēlēties ar bumbu vai uzspēlēt citu spēli, ir svarīgs, lai palīdzētu mazajam izaugt par patstāvīgu, radošu un uzņēmīgu personību.</p>
+                    <h1 class="mobile-header">Attīstības centri</h1>
+                </div>
+                <div class="leaf">
+                    <p>Valodas, lasītprasmes un rakstītprasmes attīstība</p>
+                </div>
+                <div class="leaf">
+                    <p>Matemātisko priekšstatu veidošana un konstruēšana</p>
+                </div>
+                <div class="leaf">
+                    <p>Dabas mācība</p>
+                </div>
+                <div class="leaf">
+                    <p>Māksla (mūzika, deja, vizuālā, tēlotājmāksla)</p>
+                </div>
+                <div class="leaf">
+                    <p>Spēles ar smiltīm un ūdeni</p>
+                </div>
+            </div>
+            <div class="right-side">
+                <h1>Attīstības centri</h1>
+            </div>
+
+        </div>
+        <div class="paragraph-box">
+            <p>Bērns pats var izvēlēties, kurā centrā viņš grib darboties konkrētajā dienā. Attīstības centros bērni strādā mazās grupās, kas ļauj skolotājam individuāli pievērsties mazajiem izzinātājiem.</p>
+            <p class="second">Raitu runu palīdz attīstīt logopēds, kurš nodarbības vada individuāli vai nelielās grupās.</p>
+        </div>
+    </div>
+    <div class="dienas-gaita">
+        <h2>Dienas gaita</h2>
+        <div class="grafiks">
+            <div class="left-leafs">
+                <div class="leaf-l">
+                    <p>Veram durvis mazajiem apmeklētājiem</p>
+                </div>
+                <div class="leaf-l">
+                    <p>Brokastis</p>
+                </div>
+                <div class="leaf-l">
+                    <p>Laiks svaigā gaisā</p>
+                </div>
+                <div class="leaf-l">
+                    <p>Atpūta</p>
+                </div>
+                <div class="leaf-l">
+                    <p>Attīstošas nodarbības</p>
+                </div>
+                <div class="leaf-l">
+                    <p>Pavadām mazos mājās</p>
+                </div>
+            </div>
+            <div class="center">
+                <div class="time">
+                    <p>7.30</p>
+                </div>
+                <div class="time">
+                    <p>8.30</p>
+                </div>
+                <div class="time">
+                    <p>9.00</p>
+                </div>
+                <div class="time">
+                    <p>9.30</p>
+                </div>
+                <div class="time">
+                    <p>11.00</p>
+                </div>
+                <div class="time">
+                    <p>12.00</p>
+                </div>
+                <div class="time">
+                    <p>13.00</p>
+                </div>
+                <div class="time">
+                    <p>15.30</p>
+                </div>
+                <div class="time">
+                    <p>16.00</p>
+                </div>
+                <div class="time">
+                    <p>17.00</p>
+                </div>
+                <div class="time">
+                    <p>18.30</p>
+                </div>
+            </div>
+            <div class="right-leafs">
+                <div class="leaf-r">
+                    <p>Rīta aplis</p>
+                </div>
+                <div class="leaf-r">
+                    <p>Nodarbības attīstības centros</p>
+                </div>
+                <div class="leaf-r">
+                    <p>Pusdienas</p>
+                </div>
+                <div class="leaf-r">
+                    <p>Launags</p>
+                </div>
+                <div class="leaf-r">
+                    <p>Laiks svaigā gaisā</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-flex">
+            <div class="rekviziti">
+                <img src="assets/img/logo-white.png" alt="logo">
+                <ul class="desktop-ul">
+                    <li>SIA Putnu dārzs</li>
+                    <li>Reģ. Nr. 40103914238</li>
+                    <li>Kr.Barona iela 10/7, Rīga, LV – 1050</li>
+                    <li>A/S Swedbank, HABA LV22,</li>
+                    <li>LV03HABA0551040160679</li>
+                </ul>
+                <ul class="tablet-ul">
+                    <li>SIA Putnu dārzs</li>
+                    <li>Reģ. Nr. 40103914238</li>
+                    <li>Kr.Barona iela 10/7,</li>
+                    <li>Rīga, LV – 1050</li>
+                    <li>A/S Swedbank, HABA LV22,</li>
+                    <li>LV03HABA0551040160679</li>
+                </ul>
+                <p class="copyright">© Putnu dārzs 2021. <br> Visas tiesības aizsargātas.</p>
+            </div>
+
+            <div class="info-box">
+                <div class="icons-flex">
+                    <div class="phone">
+                        <button></button>
+                        <p>27812827</p>
+                    </div>
+                    <div class="email">
+                        <button></button>
+                        <p>info@putnudarzs.eu</p>
+                    </div>
+                    <div class="home">
+                        <button></button>
+                        <p>Baložu iela 11, Rīga</p>
+                    </div>
+                </div>
+                <div id="map" class="map">
+
+                </div>
+                <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDCJI6zL3C-wSN6eX4xM7ZOAsTdQeIxBb0&callback=initMap&libraries=&v=weekly" defer></script>
+                <div class="socials">
+                    <button class="waze"></button>
+                    <button class="facebook"></button>
+                </div>
+            </div>
+        </div>
+        <p class="copyright-tablet">© Putnu dārzs 2021. Visas tiesības aizsargātas.</p>
+    </footer>
+</body>
+
+</html>

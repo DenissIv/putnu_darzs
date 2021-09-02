@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/theme.js" defer></script>
+    <script src="assets/js/map.js" defer></script>
+    <title>Putnu dārzs</title>
+</head>
+
+<body>
+    <header>
+        <div class="top-menu-container">
+            <div class="header-flex">
+                <div class="header-logo">
+                    <a href="index.html"> <img id="mobile-version" src="assets/img/krasains.png" alt="putnu dārzs"></a>
+                </div>
+                <div class="menu">
+                    <div class="item"><a href="uznemsana.html">Uzņemšana</a> </div>
+                    <div class="item"><a href="aktualitates.html">Aktualitātes</a></div>
+                    <div class="item"><a href="parmums.html">Par mums</a></div>
+                    <div class="item"><a href="buj.html">BUJ</a></div>
+                    <div class="item"><a href="">Kontakti</a></div>
+                    <div class="header-icons">
+                        <div class="facebook-icon">
+                            <a href=""><img id="facebook-img" src="assets/img/Icon-facebook-blue.png" alt="facebook"></a>
+                        </div>
+                        <div class="lang-icons">
+                            <div class="chooseLang">
+                                <div>
+                                    <span id="pt-lang" class="lang pt-lang" onclick="changeLang('português', this)"></span>
+                                    <span id="en-lang" class="lang en-lang chosen" onclick="changeLang('english', this)"></span>
+                                    <span id="es-lang" class="lang es-lang" onclick="changeLang('espanol', this)"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="responsive-menu-icon">
+                    <button id="myBtn_" onclick="openMenu_()"><img id="close-version" src="assets/img/menu-green.png" alt="menu"></button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="buj-main-container">
+        <div class="buj-container">
+            <div class="buj-header">
+                <h1>Biežāk uzdotie jautājumi</h1>
+            </div>
+            <div id="1" class="question-container first">
+                <h4>Lorem ipsum dolot sit amet?</h4>
+                <button onclick="openQuestionFull(1)"><img src="assets/img/arrow red.png" alt="arrow"></button>
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+                    no sea.</p>
+            </div>
+            <div id="2" class="question-container">
+                <h4>Lorem ipsum dolor sit amet, consetetur sadipscing elitr?</h4>
+                <button onclick="openQuestionFull(2)"><img src="assets/img/arrow red.png" alt="arrow"></button>
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+                    no sea.</p>
+            </div>
+            <div id="3" class="question-container">
+                <h4>Lorem ipsum dolot sit amet?</h4>
+                <button onclick="openQuestionFull(3)"><img src="assets/img/arrow red.png" alt="arrow"></button>
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
+                    no sea.</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-flex">
+            <div class="rekviziti">
+                <img src="assets/img/logo-white.png" alt="logo">
+                <ul class="desktop-ul">
+                    <li>SIA Putnu dārzs</li>
+                    <li>Reģ. Nr. 40103914238</li>
+                    <li>Kr.Barona iela 10/7, Rīga, LV – 1050</li>
+                    <li>A/S Swedbank, HABA LV22,</li>
+                    <li>LV03HABA0551040160679</li>
+                </ul>
+                <ul class="tablet-ul">
+                    <li>SIA Putnu dārzs</li>
+                    <li>Reģ. Nr. 40103914238</li>
+                    <li>Kr.Barona iela 10/7,</li>
+                    <li>Rīga, LV – 1050</li>
+                    <li>A/S Swedbank, HABA LV22,</li>
+                    <li>LV03HABA0551040160679</li>
+                </ul>
+                <p class="copyright">© Putnu dārzs 2021. <br> Visas tiesības aizsargātas.</p>
+            </div>
+
+            <div class="info-box">
+                <div class="icons-flex">
+                    <div class="phone">
+                        <button></button>
+                        <p>27812827</p>
+                    </div>
+                    <div class="email">
+                        <button></button>
+                        <p>info@putnudarzs.eu</p>
+                    </div>
+                    <div class="home">
+                        <button></button>
+                        <p>Baložu iela 11, Rīga</p>
+                    </div>
+                </div>
+                <div id="map" class="map">
+
+                </div>
+                <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDCJI6zL3C-wSN6eX4xM7ZOAsTdQeIxBb0&callback=initMap&libraries=&v=weekly" defer></script>
+                <div class="socials">
+                    <button class="waze"></button>
+                    <button class="facebook"></button>
+                </div>
+            </div>
+        </div>
+        <p class="copyright-tablet">© Putnu dārzs 2021. Visas tiesības aizsargātas.</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/theme.js" defer></script>
+    <script src="assets/js/map.js" defer></script>
+    <title>Putnu dārzs</title>
+</head>
+
+<body>
+    <header>
+        <div class="top-menu-container">
+            <div class="header-flex">
+                <div class="header-logo">
+                    <a href="index.html"> <img id="mobile-version" src="assets/img/krasains.png" alt="putnu dārzs"></a>
+                </div>
+                <div class="menu">
+                    <div class="item"><a href="uznemsana.html">Uzņemšana</a> </div>
+                    <div class="item"><a href="aktualitates.html">Aktualitātes</a></div>
+                    <div class="item"><a href="parmums.html">Par mums</a></div>
+                    <div class="item"><a href="buj.html">BUJ</a></div>
+                    <div class="item"><a href="">Kontakti</a></div>
+                    <div class="header-icons">
+                        <div class="facebook-icon">
+                            <a href=""><img id="facebook-img" src="assets/img/Icon-facebook-blue.png" alt="facebook"></a>
+                        </div>
+                        <div class="lang-icons">
+                            <div class="chooseLang">
+                                <div>
+                                    <span id="pt-lang" class="lang pt-lang" onclick="changeLang('português', this)"></span>
+                                    <span id="en-lang" class="lang en-lang chosen" onclick="changeLang('english', this)"></span>
+                                    <span id="es-lang" class="lang es-lang" onclick="changeLang('espanol', this)"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="responsive-menu-icon">
+                    <button id="myBtn_" onclick="openMenu_()"><img id="close-version" src="assets/img/menu-green.png" alt="menu"></button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="main-container-uznemsana">
+        <div class="uznemsana-box">
+            <div class="h-one">
+                <h1>Uzņemšana</h1>
+            </div>
+            <div class="uznemsana-flex">
+                <div class="bilde-uznemsana">
+                    <img src="assets/img/bilde-uznemsana.png" alt="bilde">
+                    <img class="mobile-photo-uznemsana" src="assets/img/bilde-uznemsana-mob.png" alt="bilde">
+                </div>
+                <div class="text">
+                    <p>Putnu dārzā pirmsskolā un bērnu pieskatīšanas grupā laipni gaidām dažādu tautību, valstiskās vai konfesionālās piederības audzēkņus vecumā no pusotra gada līdz pieciem gadiem.</p>
+                </div>
+            </div>
+            <div class="cenas-table">
+                <div class="cell"></div>
+                <div class="cell">
+                    <h6>Cena*</h6>
+                </div>
+                <div class="cell">
+                    <h6>Cenā iekļauts</h6>
+                </div>
+                <div class="cell">
+                    <h6>Mācības</h6>
+                </div>
+                <div class="cell">
+                    <p>420 €</p>
+                </div>
+                <div class="cell">
+                    <p>Pamata mācības, speciālistu vadītās nodarbības</p>
+                </div>
+                <div class="cell">
+                    <h6>Ēdināšana</h6>
+                </div>
+                <div class="cell">
+                    <p>4 €</p>
+                </div>
+                <div class="cell">
+                    <p>Vienas dienas trīs ēdienreizes</p>
+                </div>
+            </div>
+            <div class="additional-info">
+                <p>*Pastāvīgiem pilna laika pirmsskolas un dienas grupas audzēkņiem maksa tiek samazināta valsts un katras pašvaldības noteiktā līdzfinansējuma apmērā.</p>
+            </div>
+        </div>
+        <div class="pieteiksanas-container">
+            <h2>Pieteikšanās</h2>
+            <div class="form-container">
+                <form action="submit">
+                    <div class="form-flex">
+                        <div class="child-container">
+                            <h4>Informācija par bērnu</h4>
+                            <div class="name"><input type="text" id="name" name="name" placeholder="Vārds"><br></div>
+                            <div class="surname"><input type="text" id="surname" name="surname" placeholder="Uzvārds"><br></div>
+                            <div class="age"><input type="text" id="age" name="age" placeholder="Vecums"><br></div>
+                            <div class="date"><input type="text" placeholder="Vēlamais sākšanas datums" onfocus="(this.type='date')" onblur="(this.type='text')" id="date" name="date"><br></div>
+                        </div>
+                        <div class="parent-container">
+                            <h4>Informācija par vecāku</h4>
+                            <div class="name-p"><input type="text" id="name" name="name" placeholder="Vārds"><br></div>
+                            <div class="surname-p"><input type="text" id="surname" name="surname" placeholder="Uzvārds"><br></div>
+                            <div class="email"><input type="text" id="email" name="email" placeholder="E-pasts"><br></div>
+                            <div class="phone"><input type="text" id="phone" name="phone" placeholder="Tālruņa numurs"><br></div>
+                        </div>
+                    </div>
+                    <div class="submit">
+                        <div class="submit-flex">
+                            <div>
+                                <h6>Pieteikties ēdināšanai</h6>
+                            </div>
+                            <div class="checkbox-box">
+                                <div class="table">
+                                    <input class="checkbox-input" type="radio" id="yes" name="choice" value="true">
+                                    <label for="yes"> Jā</label><br>
+                                </div>
+                                <div class="table second">
+                                    <input class="checkbox-input" type="radio" id="no" name="choice" value="false">
+                                    <label for="no"> Nē</label><br>
+                                </div>
+                            </div>
+                        </div>
+                        <input type="submit" value="PIETEIKTIES">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="lidznemsanai-container">
+            <div class="lidzi">
+                <h2>Līdzņemšanai</h2>
+            </div>
+            <div class="list-flex">
+                <div class="list-one">
+                    <ul>
+                        <li>Atbilstīgs apģērbs: ziemas kombinezons un ūdensnecaurlaidīgi siltie cimdi, ziemas cepure, šalle un zābaki, mitrumizturīgs apģērbs āra nodarbēm lietainā dienā, vasaras galvassega.</li>
+                        <li>Mitrās salvetes, autiņbiksītes (pēc vajadzības).</li>
+                        <li>Ķemme (no divu gadu vecuma).</li>
+                    </ul>
+                </div>
+                <div class="list-two">
+                    <ul>
+                        <li>Zobu higiēnas piederumi (no trīs gadu vecuma).</li>
+                        <li>Uzpildāmā ūdens krūze vai pudele.</li>
+                        <li>Cieši pieguļoši maiņas apavi.</li>
+                        <li>Maiņas apģērbs nodarbēm telpās, apģērbs un apavi sporta nodarbībām.</li>
+                        <li>Mīļmanta un apģērbs gulēšanai.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-flex">
+            <div class="rekviziti">
+                <img src="assets/img/logo-white.png" alt="logo">
+                <ul class="desktop-ul">
+                    <li>SIA Putnu dārzs</li>
+                    <li>Reģ. Nr. 40103914238</li>
+                    <li>Kr.Barona iela 10/7, Rīga, LV – 1050</li>
+                    <li>A/S Swedbank, HABA LV22,</li>
+                    <li>LV03HABA0551040160679</li>
+                </ul>
+                <ul class="tablet-ul">
+                    <li>SIA Putnu dārzs</li>
+                    <li>Reģ. Nr. 40103914238</li>
+                    <li>Kr.Barona iela 10/7,</li>
+                    <li>Rīga, LV – 1050</li>
+                    <li>A/S Swedbank, HABA LV22,</li>
+                    <li>LV03HABA0551040160679</li>
+                </ul>
+                <p class="copyright">© Putnu dārzs 2021. <br> Visas tiesības aizsargātas.</p>
+            </div>
+
+            <div class="info-box">
+                <div class="icons-flex">
+                    <div class="phone">
+                        <button></button>
+                        <p>27812827</p>
+                    </div>
+                    <div class="email">
+                        <button></button>
+                        <p>info@putnudarzs.eu</p>
+                    </div>
+                    <div class="home">
+                        <button></button>
+                        <p>Baložu iela 11, Rīga</p>
+                    </div>
+                </div>
+                <div id="map" class="map">
+
+                </div>
+                <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDCJI6zL3C-wSN6eX4xM7ZOAsTdQeIxBb0&callback=initMap&libraries=&v=weekly" defer></script>
+                <div class="socials">
+                    <button class="waze"></button>
+                    <button class="facebook"></button>
+                </div>
+            </div>
+        </div>
+        <p class="copyright-tablet">© Putnu dārzs 2021. Visas tiesības aizsargātas.</p>
+    </footer>
+</body>
+
+</html>

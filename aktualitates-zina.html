@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/theme.js" defer></script>
+    <script src="assets/js/map.js" defer></script>
+    <title>Putnu dārzs</title>
+</head>
+
+<body>
+    <header>
+        <div class="top-menu-container">
+            <div class="header-flex">
+                <div class="header-logo">
+                    <a href="index.html"> <img id="mobile-version" src="assets/img/krasains.png" alt="putnu dārzs"></a>
+                </div>
+                <div class="menu">
+                    <div class="item"><a href="uznemsana.html">Uzņemšana</a> </div>
+                    <div class="item"><a href="aktualitates.html">Aktualitātes</a></div>
+                    <div class="item"><a href="parmums.html">Par mums</a></div>
+                    <div class="item"><a href="buj.html">BUJ</a></div>
+                    <div class="item"><a href="">Kontakti</a></div>
+                    <div class="header-icons">
+                        <div class="facebook-icon">
+                            <a href=""><img id="facebook-img" src="assets/img/Icon-facebook-blue.png" alt="facebook"></a>
+                        </div>
+                        <div class="lang-icons">
+                            <div class="chooseLang">
+                                <div>
+                                    <span id="pt-lang" class="lang pt-lang" onclick="changeLang('português', this)"></span>
+                                    <span id="en-lang" class="lang en-lang chosen" onclick="changeLang('english', this)"></span>
+                                    <span id="es-lang" class="lang es-lang" onclick="changeLang('espanol', this)"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="responsive-menu-icon">
+                    <button id="myBtn_" onclick="openMenu_()"><img id="close-version" src="assets/img/menu-green.png" alt="menu"></button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="aktualitates-zina-container">
+        <div class="zina-info">
+            <h1>
+                Par Reggio Emilia publiskajā telpā
+            </h1>
+            <div class="image-text">
+                <img src="" alt="">
+                <p>Dažādās formās esam stāstījuši „Kas ir Reggio Emilio pieeja?„ Portālā Calis.lv informatīvā rakstā „Redžio pieejas bērnudārzs Pārdaugavā” var lasīt par Putnu dārza darbības pamatprincipiem un aplūkot bildes no Putnu dārza telpām un rotaļlietām.
+                    Savukārt Latvijas Radio raidījumā „Ģimenes Studija” stāstījām par Reggio Emilia pieejas atšķirīgo no citām alternatīvajām pedagoģijām un citām Latvijas izglītības laukā sastopamajām inovācijām. Akadēmisku ieskatu pieejas attīstības
+                    vēsturē un daudz detalizētāku ieskatu pieejas īstenošanas nosacījumos, apskatot arī citu valstu pozitīvo pieredzi, Latvijas Universitātes Pedagoģijas, psiholoģijas un mākslas fakultātē vieslekcijā kursa „Izglītības vide” ietvaros stāstīja
+                    Dr.sc.admin. Ireta Čekse.</p>
+                <p class="special">Aicinām iepazīties ar minētajiem avotiem:</p>
+                <ul>
+                    <li>Redžio pieejas bērnudārzs Pārdaugavā. Publicēts:01.2016 09:06. Pieejams: <br class="tablet-break"><a href="">http://www.delfi.lv/calis/jaunumi/redzio-pieejas-bernudarzs-pardaugava.d?id=46965377</a></li>
+                    <li>Dažādas alternatīvas mācību metodes bērnudārzniekiem. Ģimenes studija. LR1, Simanoviča, D., Znotiņa, M. 4.02.2016, 15:06, pieejams: <a href="">http://lr1.lsm.lv/lv/raksts/gimenes-studija/dazadas-alternativas-macibu-metodes-bernudarzniekiem.a63112/</a></li>
+                    <li>Reggio Emilia izglītības pieeja. <a href="">Lekcijas materiāls.</a> Dr.sc.admin. Ireta Čekse., LU PPMF, 8.03.2016</li>
+                </ul>
+                <a class="back" href="">Atpakaļ uz aktualitatēm</a>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-flex">
+            <div class="rekviziti">
+                <img src="assets/img/logo-white.png" alt="logo">
+                <ul class="desktop-ul">
+                    <li>SIA Putnu dārzs</li>
+                    <li>Reģ. Nr. 40103914238</li>
+                    <li>Kr.Barona iela 10/7, Rīga, LV – 1050</li>
+                    <li>A/S Swedbank, HABA LV22,</li>
+                    <li>LV03HABA0551040160679</li>
+                </ul>
+                <ul class="tablet-ul">
+                    <li>SIA Putnu dārzs</li>
+                    <li>Reģ. Nr. 40103914238</li>
+                    <li>Kr.Barona iela 10/7,</li>
+                    <li>Rīga, LV – 1050</li>
+                    <li>A/S Swedbank, HABA LV22,</li>
+                    <li>LV03HABA0551040160679</li>
+                </ul>
+                <p class="copyright">© Putnu dārzs 2021. <br> Visas tiesības aizsargātas.</p>
+            </div>
+
+            <div class="info-box">
+                <div class="icons-flex">
+                    <div class="phone">
+                        <button></button>
+                        <p>27812827</p>
+                    </div>
+                    <div class="email">
+                        <button></button>
+                        <p>info@putnudarzs.eu</p>
+                    </div>
+                    <div class="home">
+                        <button></button>
+                        <p>Baložu iela 11, Rīga</p>
+                    </div>
+                </div>
+                <div id="map" class="map">
+
+                </div>
+                <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDCJI6zL3C-wSN6eX4xM7ZOAsTdQeIxBb0&callback=initMap&libraries=&v=weekly" defer></script>
+                <div class="socials">
+                    <button class="waze"></button>
+                    <button class="facebook"></button>
+                </div>
+            </div>
+        </div>
+        <p class="copyright-tablet">© Putnu dārzs 2021. Visas tiesības aizsargātas.</p>
+    </footer>
+</body>
+
+</html>
